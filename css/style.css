@@ -1,111 +1,237 @@
 /* public-sans-regular - latin */
 @font-face {
-    font-family: 'Public Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/public-sans-v5-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/public-sans-v5-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  
-  /* public-sans-700 - latin */
-  @font-face {
-    font-family: 'Public Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''),
-         url('../fonts/public-sans-v5-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/public-sans-v5-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  
-  /* public-sans-700italic - latin */
-  @font-face {
-    font-family: 'Public Sans';
-    font-style: italic;
-    font-weight: 700;
-    src: local(''),
-         url('../fonts/public-sans-v5-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/public-sans-v5-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  
+	font-family: "Public Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: local(""),
+		url("../fonts/public-sans-v5-latin-regular.woff2") format("woff2"),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+			url("../fonts/public-sans-v5-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
-  /* ibarra-real-nova-regular - latin */
+/* public-sans-700 - latin */
 @font-face {
-    font-family: 'Ibarra Real Nova';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/ibarra-real-nova-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/ibarra-real-nova-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  
-  /* ibarra-real-nova-700 - latin */
-  @font-face {
-    font-family: 'Ibarra Real Nova';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''),
-         url('../fonts/ibarra-real-nova-v8-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/ibarra-real-nova-v8-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  
+	font-family: "Public Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: local(""),
+		url("../fonts/public-sans-v5-latin-700.woff2") format("woff2"),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+			url("../fonts/public-sans-v5-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* public-sans-700italic - latin */
+@font-face {
+	font-family: "Public Sans";
+	font-style: italic;
+	font-weight: 700;
+	src: local(""),
+		url("../fonts/public-sans-v5-latin-700italic.woff2") format("woff2"),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+			url("../fonts/public-sans-v5-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ibarra-real-nova-regular - latin */
+@font-face {
+	font-family: "Ibarra Real Nova";
+	font-style: normal;
+	font-weight: 400;
+	src: local(""),
+		url("../fonts/ibarra-real-nova-v8-latin-regular.woff2") format("woff2"),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+			url("../fonts/ibarra-real-nova-v8-latin-regular.woff")
+			format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ibarra-real-nova-700 - latin */
+@font-face {
+	font-family: "Ibarra Real Nova";
+	font-style: normal;
+	font-weight: 700;
+	src: local(""),
+		url("../fonts/ibarra-real-nova-v8-latin-700.woff2") format("woff2"),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+			url("../fonts/ibarra-real-nova-v8-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /*General*/
+:root {
+	--primary: #5fb4a2;
+	--font-color: #33323d;
+	--btn-primary: #203a4c;
+	--btn-secondary: #000000;
+}
+
 body {
-    font-family: 'Public Sans', sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.5rem;
-    background-color: #fff;
+	font-family: "Public Sans", sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.5rem;
+    color: var(--font-color);
+	background-color: #fafafa;
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Ibarra Real Nova', serif;
+	font-family: "Ibarra Real Nova", serif;
 }
 
 h1,
 h2 {
-    font-weight: 700;
+	font-weight: 700;
 }
 
 h1 {
-    font-size: 5rem;
-    line-height: 1;
+	font-size: 5rem;
+	line-height: 1;
 }
 
 h2 {
-    font-size: 4.2rem;
-    line-height: 1.1;
+	font-size: 4.2rem;
+	line-height: 1.1;
 }
 
 h3 {
-    font-size: 3.2rem;
-    line-height: 1.1;
+	font-size: 3.2rem;
+	line-height: 1.1;
 }
 
 p {
-    font-size: 1.6rem;
-    line-height: 1.8;
+	font-size: 1.6rem;
+	line-height: 1.8;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: currentColor;
 }
 
 /*Layout*/
 .container {
-    width: 100%;
-    max-width: 54.4rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 3.2rem;
+	padding-right: 3.2rem;
+}
+
+@media screen and (min-width: 36em) {
+	.container {
+		max-width: 48.6rem;
+	}
 }
 
 @media screen and (min-width: 48em) {
-    .container {
-        max-width: 72.8rem;
-    }
+	.container {
+		max-width: 67.8rem;
+	}
 }
 
 @media screen and (min-width: 62em) {
-    .container {
-        max-width: 111rem;
-    }
+	.container {
+		max-width: 90.2rem;
+	}
+}
+
+@media screen and (min-width: 75em) {
+	.container {
+		max-width: 111rem;
+	}
+}
+
+/*Header*/
+
+.main-header .container {
+    position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 3.2rem;
+	padding-bottom: 3.2rem;
+}
+
+.menu-btn {
+	position: relative;
+	height: 1.3rem;
+    width: 2.4rem;
+}
+
+.menu-closed {
+    border-top: .1rem solid var(--font-color);
+    border-bottom: .1rem solid var(--font-color);
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    padding: .6rem 0;
+}
+
+.menu-closed::before {
+    position: absolute;
+    content: "";
+    height: .1rem;
+    width: 100%;
+    background-color: var(--font-color);
+    left: 0;
+    top: 50%;
+}
+
+.menu-open {
+	padding-left: 0;
+	padding-right: 0;
+	border: none;
+	background-color: transparent;
+}
+
+.menu-open::before {
+	position: absolute;
+    content: "";
+    height: .1rem;
+    width: 100%;
+    background-color: var(--font-color);
+    left: 0;
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.menu-open::after {
+	position: absolute;
+    content: "";
+    height: .1rem;
+    width: 100%;
+    background-color: var(--font-color);
+    left: 0;
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+ul.menu-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--font-color);
+    color: #fff;
+    text-align: center;
+}
+
+.menu-link {
+    padding: 1.6rem 6rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+	transition: .3s;
+}
+
+.menu-item:first-of-type .menu-link {
+	padding-top: 4rem;
+}
+
+.menu-item:last-of-type  .menu-link{
+	padding-bottom: 4rem;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+	color: var(--font-color);
+	background-color: #fff;
 }
