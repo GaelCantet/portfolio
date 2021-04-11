@@ -88,7 +88,7 @@ h1 {
 }
 
 h2 {
-	font-size: 4.2rem;
+	font-size: 4rem;
 	line-height: 1.1;
 	margin-bottom: 2.5rem;
 }
@@ -180,6 +180,8 @@ a {
 	padding: 1.7rem 3.3rem;
 	border: .1rem solid var(--font-color);
 	color: var(--font-color);
+	font-size: 1.2rem;
+	text-transform: uppercase;
 	transition: .3s;
 }
 
@@ -440,3 +442,59 @@ ul.menu-list {
 		column-gap: 12.5rem;
 	}
 }
+
+/*Contact me*/
+.contact-me {
+	text-align: center;
+	margin-bottom: 8rem;
+}
+
+.contact-title {
+	margin-bottom: 2.8rem;
+	max-width: max-content;
+}
+
+.contact-divider {
+	display: none;
+}
+
+.contact-link {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (min-width: 48em) {
+	.contact-me {
+		text-align: left;
+	}
+
+	.contact-me .container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.contact-title {
+		max-width: 35rem;
+		margin-bottom: 0;
+		justify-self: start;
+	}
+
+	.contact-divider {
+		flex-grow: 1;
+		display: block;
+		background-color: rgba(51,50,61, .15);
+		height: .1rem;
+		margin: 0 3.2rem;
+		justify-self: center;
+	}
+
+	.contact-link {
+		justify-self: end;
+		width: 16.2rem;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+/*Footer*/
