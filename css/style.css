@@ -90,6 +90,7 @@ h1 {
 h2 {
 	font-size: 4.2rem;
 	line-height: 1.1;
+	margin-bottom: 2.5rem;
 }
 
 h3 {
@@ -100,6 +101,7 @@ h3 {
 p {
 	font-size: 1.6rem;
 	line-height: 1.8;
+	margin-bottom: 1.8rem;
 }
 
 a {
@@ -139,6 +141,51 @@ a {
 	.container {
 		max-width: 111rem;
 	}
+}
+
+/*Composants*/
+.cta-primary {
+	min-width: 2rem;
+	background-color: var(--btn-primary);
+	border: none;
+	padding-left: 0;
+	padding-right: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	transition: .3s;
+	padding-block: 0;
+}
+
+.cta-primary img {
+	display: inline-block;
+	background-color: rgba(0,0,0,.1);
+	padding: 1.6rem;
+}
+
+.cta-primary span {
+	display: inline-block;
+	padding: 1.6rem 3.2rem;
+	font-size: 1.2rem;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.cta-primary:hover {
+	background-color: var(--primary);
+}
+
+.cta-secondary {
+	max-width: max-content;
+	padding: 1.7rem 3.3rem;
+	border: .1rem solid var(--font-color);
+	color: var(--font-color);
+	transition: .3s;
+}
+
+.cta-secondary:hover {
+	color: #fff;
+	background-color: var(--font-color);
 }
 
 /*Header*/
@@ -300,6 +347,7 @@ ul.menu-list {
 	
 	.menu-item:last-of-type  .menu-link{
 		padding-bottom: .9rem;
+		padding-right: 0;
 	}
 
 	.menu-link:hover,
@@ -310,6 +358,10 @@ ul.menu-list {
 }
 
 /*Hero*/
+.hero {
+	margin-bottom: 9.6rem;
+}
+
 .hero .container {
 	position: relative;
 }
@@ -324,37 +376,6 @@ ul.menu-list {
 .hero-content h1 {
 	font-size: 4rem;
 	margin-bottom: 2rem;
-}
-
-.cta {
-	min-width: 2rem;
-	background-color: var(--btn-primary);
-	border: none;
-	padding-left: 0;
-	padding-right: 0;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	transition: .3s;
-	padding-block: 0;
-}
-
-.cta img {
-	display: inline-block;
-	background-color: rgba(0,0,0,.1);
-	padding: 1.6rem;
-}
-
-.cta span {
-	display: inline-block;
-	padding: 1.6rem 3.2rem;
-	font-size: 1.2rem;
-	color: #fff;
-	text-transform: uppercase;
-}
-
-.cta:hover {
-	background-color: var(--primary);
 }
 
 @media screen and (min-width: 48em) {
@@ -382,5 +403,40 @@ ul.menu-list {
 @media screen and (min-width: 75em) {
 	.hero-content {
 		max-width: 40%;
+	}
+}
+
+/*About*/
+.about-me .container {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 3.2rem;
+	margin-bottom: 11.9rem;
+}
+
+.about-content {
+	padding-top: 3.7rem;
+	padding-bottom: 5.2rem;
+	border-top: .1rem solid rgba(51,50,61, .15);
+	border-bottom: .1rem solid rgba(51,50,61, .15);
+}
+
+@media screen and (min-width: 48em) {
+	.about-me .container {
+		grid-template-columns: auto auto;
+		column-gap: 7rem;
+	}
+
+	.about-img {
+		height: 100%;
+		object-fit: cover;
+		object-position: right center;
+	}
+}
+
+@media screen and (min-width: 75em) {
+	.about-me .container {
+		grid-template-columns: 60% auto;
+		column-gap: 12.5rem;
 	}
 }
