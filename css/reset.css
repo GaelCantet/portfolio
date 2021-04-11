@@ -590,6 +590,12 @@ footer .container {
 	padding-top: 1.6rem;
 	padding-bottom: 1.6rem;
 	letter-spacing: .2rem;
+	transition: .3s;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+	color: var(--primary);
 }
 
 ul.social-list {
@@ -598,6 +604,15 @@ ul.social-list {
 	justify-content: space-between;
 	align-items: center;
 	min-width: 10.4rem;
+}
+
+.social-link svg path {
+	transition: .3s;
+}
+
+.social-link:hover svg path,
+.social-link:focus svg path {
+	fill: var(--primary);
 }
 
 @media screen and (min-width: 48em) {
