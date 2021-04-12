@@ -367,7 +367,7 @@ a {
     border-right: none;
     background-color: transparent;
     padding: .6rem 0;
-	transition: .3s;
+	transition: border-width .3s .2s;
 }
 
 .menu-closed::before {
@@ -378,7 +378,7 @@ a {
     background-color: var(--font-color);
     left: 0;
     top: 50%;
-	transition: border-width .3s .2s;
+	transition: .3s;
 }
 
 .menu-closed::after {
