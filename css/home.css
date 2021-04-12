@@ -50,7 +50,7 @@
 }
 
 /*About*/
-.about-me .container {
+.about .container {
 	display: grid;
 	grid-template-columns: 1fr;
 	row-gap: 3.2rem;
@@ -65,7 +65,7 @@
 }
 
 @media screen and (min-width: 48em) {
-	.about-me .container {
+	.about .container {
 		grid-template-columns: auto auto;
 		column-gap: 7rem;
 	}
@@ -78,7 +78,7 @@
 }
 
 @media screen and (min-width: 75em) {
-	.about-me .container {
+	.about .container {
 		grid-template-columns: 60% auto;
 		column-gap: 12.5rem;
 	}
