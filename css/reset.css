@@ -358,9 +358,6 @@ a {
 	position: relative;
 	height: 1.3rem;
     width: 2.4rem;
-}
-
-.menu-closed {
     border-top: .1rem solid var(--font-color);
     border-bottom: .1rem solid var(--font-color);
     border-left: none;
@@ -370,7 +367,7 @@ a {
 	transition: border-width .3s .2s;
 }
 
-.menu-closed::before {
+.menu-btn::before {
     position: absolute;
     content: "";
     height: .1rem;
@@ -381,7 +378,7 @@ a {
 	transition: .3s;
 }
 
-.menu-closed::after {
+.menu-btn::after {
     position: absolute;
     content: "";
     height: .1rem;
