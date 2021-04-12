@@ -11,6 +11,7 @@ html {
   font-size: calc(
     1em * 0.625
   ); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+  scroll-behavior: smooth;
 }
 
 /* Remove focus for mouse users */
@@ -294,6 +295,7 @@ a {
 /*Composants*/
 .cta-primary {
 	min-width: 2rem;
+	max-width: max-content;
 	background-color: var(--btn-primary);
 	border: none;
 	padding-left: 0;
@@ -319,7 +321,8 @@ a {
 	text-transform: uppercase;
 }
 
-.cta-primary:hover {
+.cta-primary:hover,
+.cta-primary:focus {
 	background-color: var(--primary);
 }
 
@@ -333,7 +336,8 @@ a {
 	transition: .3s;
 }
 
-.cta-secondary:hover {
+.cta-secondary:hover,
+.cta-secondary:focus {
 	color: #fff;
 	background-color: var(--font-color);
 }
@@ -422,6 +426,14 @@ a {
 	transition: .3s;
 }
 
+.menu-closed::before {
+	transition: .3s;
+}
+
+.menu-closed::after {
+	transition: .3s;
+}
+
 .menu-closed:hover{
 	border-color: var(--primary);
 }
@@ -434,14 +446,26 @@ a {
 	background-color: var(--primary);
 }
 
+[hidden] {
+	display: block;
+	visibility: hidden;
+}
+
 ul.menu-list {
     position: absolute;
+	margin-right: 3.2rem;
     top: 100%;
     right: 0;
-    background-color: var(--font-color);
+	background-color: var(--font-color);
     color: #fff;
     text-align: center;
 	z-index: 2;
+	transform: translateX(150%);
+	transition: .3s;
+}
+
+ul.menu-list:not([hidden]) {
+	transform: translateX(0);
 }
 
 .menu-link {
@@ -468,6 +492,7 @@ ul.menu-list {
 @media screen and (min-width: 48em) {
 	[hidden] {
 		display: flex;
+		visibility: visible;
 	}
 
 	.menu-btn {
@@ -476,11 +501,13 @@ ul.menu-list {
 
 	ul.menu-list {
 		position: relative;
+		margin-right: 0;
 		justify-content: space-between;
 		align-items: center;
 		background-color: transparent;
 		color: var(--font-color);
 		text-align: center;
+		transform: translateX(0);
 	}
 
 	.menu-link {
