@@ -26,7 +26,7 @@
 
 <section class="contact">
     <div class="container">
-        <h2 class="contact-title">Get in Touch</h2>
+        <h2 class="contact-form-title">Get in Touch</h2>
         <p class="contact-text">I’d love to hear about what you’re working on and how I could help. I’m currently looking for a new role and am open to a wide range of opportunities. My preference would be to find a position in a company in London. But I’m also happy to hear about opportunites that don’t fit that description. I’m a hard-working and positive person who will always approach each task with a sense of purpose and attention to detail. Please do feel free to check out my online profiles below and get in touch using the form.</p>
         <ul class="social-list">
             <li class="social-item"><a href="" class="social-link">
@@ -44,15 +44,15 @@
 
 <section class="contact">
     <div class="container">
-        <h2 class="contact-title">Contact Me</h2>
+        <h2 class="contact-form-title">Contact Me</h2>
         <form action="" class="contact-form">
             <label for="name" class="contact-label">Name</label>
-            <input id="name" name="name" type="text" class="contact-input" placeholder="Jane Appleseed">
+            <input id="name" name="name" type="text" class="contact-input" placeholder="Jane Appleseed" required>
             <label for="email" class="contact-label">Email Adress</label>
-            <input id="email" name="email" type="email" class="contact-input" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <input id="email" name="email" type="email" class="contact-input" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
             <label for="message" class="contact-label">Message</label>
-            <textarea id="message" name="message" cols="30" rows="10" class="contact-textarea" placeholder="How can I help?"></textarea>
-            <a href="" class="cta-primary"><span>Send message</span></a>
+            <textarea id="message" name="message" class="contact-textarea" placeholder="How can I help?" pattern="[0-9A-Za-z]" required></textarea>
+            <button type="submit" class="cta-primary"><span>Send message</span></button>
         </form>
     </div>
 </section>
