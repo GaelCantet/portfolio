@@ -7,3 +7,17 @@ toggleMenu.addEventListener('click', function() {
   menu.hidden = !menu.hidden;
   toggleMenu.classList.toggle('menu-open');
 });
+
+
+function checkValid(param) {
+  var pattern = RegExp(param.getAttribute('pattern'));
+  var check = pattern.test(param.value);
+  if(check == false) {
+    param.style.outline = ".1rem solid #F43030";
+  } else {
+    param.style.outline = ".1rem solid #5fb4a2";
+  }
+}
+
+
+

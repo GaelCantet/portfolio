@@ -47,11 +47,11 @@
         <h2 class="contact-form-title">Contact Me</h2>
         <form action="" class="contact-form">
             <label for="name" class="contact-label">Name</label>
-            <input id="name" name="name" type="text" class="contact-input" placeholder="Jane Appleseed" required>
+            <input id="name" name="name" type="text" class="contact-input" placeholder="Jane Appleseed" pattern="[0-9A-Za-z]" required onchange="checkValid(this)">
             <label for="email" class="contact-label">Email Adress</label>
-            <input id="email" name="email" type="email" class="contact-input" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <input id="email" name="email" type="email" class="contact-input" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required onchange="checkValid(this)">
             <label for="message" class="contact-label">Message</label>
-            <textarea id="message" name="message" class="contact-textarea" placeholder="How can I help?" pattern="[0-9A-Za-z]" required></textarea>
+            <textarea id="message" name="message" class="contact-textarea" placeholder="How can I help?" pattern="[0-9A-Za-z]" required onchange="checkValid(this)"></textarea>
             <button type="submit" class="cta-primary"><span>Send message</span></button>
         </form>
     </div>

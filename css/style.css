@@ -153,16 +153,6 @@ textarea:focus {
 	box-shadow: none;
 }
 
-input:focus:invalid,
-textarea:focus:invalid {
-	outline: .1rem solid #F43030;
-}
-
-input:valid,
-textarea:valid {
-	outline: .1rem solid var(--primary);
-}
-
 .current-page {
 	color: var(--primary);
 }
