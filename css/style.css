@@ -99,6 +99,7 @@ h2 {
 h3 {
 	font-size: 3.2rem;
 	line-height: 1.1;
+	font-weight: 400;
 }
 
 p {
@@ -111,6 +112,54 @@ a {
     display: block;
     text-decoration: none;
     color: currentColor;
+}
+
+label {
+	display: block;
+	font-size: 1.3rem;
+	margin-bottom: 1.5rem;
+	font-weight: 700;
+}
+
+input,
+textarea {
+	display: block;
+	width: 100%;
+	padding: 1.7rem;
+	background-color: rgba(51,50,61, .1);
+	border: none;
+}
+
+input {
+	margin-bottom: 3.2rem;
+}
+
+textarea {
+	margin-bottom: 2.4rem;
+	min-height: 9.6rem;
+}
+
+input:focus,
+textarea:focus {
+	outline: .1rem solid var(--font-color);
+}
+
+::placeholder{
+	color: rgba(51,50,61,.4);
+}
+
+:-moz-ui-invalid {
+	box-shadow: none;
+}
+
+input:focus:invalid,
+textarea:focus:invalid {
+	outline: .1rem solid #F43030;
+}
+
+input:valid,
+textarea:valid {
+	outline: .1rem solid var(--primary);
 }
 
 .current-page {
@@ -594,50 +643,6 @@ ul.menu-list:not([hidden]) {
     fill: var(--font-color);
 }
 
-label {
-	display: block;
-	font-size: 1.3rem;
-	margin-bottom: 1.5rem;
-	font-weight: 700;
-}
-
-input,
-textarea {
-	display: block;
-	width: 100%;
-	padding: 1.7rem;
-	background-color: rgba(51,50,61, .1);
-	border: none;
-}
-
-input:focus,
-textarea:focus {
-	outline: .1rem solid var(--font-color);
-}
-
-::placeholder{
-	color: rgba(51,50,61,.4);
-}
-
-:-moz-ui-invalid {
-	outline: .1rem solid #F43030;
-	box-shadow: none;
-}
-
-input:valid,
-textarea:valid {
-	outline: .1rem solid var(--primary);
-}
-
-input {
-	margin-bottom: 3.2rem;
-}
-
-textarea {
-	margin-bottom: 2.4rem;
-	min-height: 9.6rem;
-}
-
 @media screen and (min-width: 48em) {
 	.contact .container {
 		padding-top: 3.6rem;
@@ -661,6 +666,9 @@ textarea {
 		grid-column: 2/3;
 	}
 }
+
+/*Portfolio pages*/
+
 
 
 /*Contact me*/
